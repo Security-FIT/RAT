@@ -1,0 +1,6 @@
+tensorboard
+pandas
+matplotlib
+tqdm
+audiomentations
+confidence_intervals

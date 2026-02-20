@@ -1,0 +1,8 @@
+LA_model.pth
+__pycache__
+trained_models
+*.pt
+*.zip
+*.png
+*.flac
+*.wav

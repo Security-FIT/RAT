@@ -1,0 +1,46 @@
+local_config = {
+    "argv": ["--sge"],
+    "data_dir": "/path/to/your/datasets/directory/",
+    "asvspoof2019la": {
+        "train_subdir": "LA19",
+        "dev_subdir": "LA19",
+        "eval_subdir": "LA19",
+        "train_protocol": "ASVspoof2019.LA.cm.train.trl.txt",
+        "dev_protocol": "ASVspoof2019.LA.cm.dev.trl.txt",
+        "eval_protocol": "ASVspoof2019.LA.cm.eval.trl.txt",
+    },
+    "asvspoof2021la": {
+        # need to take train and dev from 2019 and eval from 2021
+        "train_subdir": "LA19",
+        "dev_subdir": "LA19",
+        "eval_subdir": "LA21",
+        "train_protocol": "ASVspoof2019.LA.cm.train.trl.txt",
+        "dev_protocol": "ASVspoof2019.LA.cm.dev.trl.txt",
+        "eval_protocol": "trial_metadata.txt",
+    },
+    "asvspoof2021df": {
+        "train_subdir": "LA19",
+        "dev_subdir": "DF21",
+        "eval_subdir": "DF21",
+        "train_protocol": "ASVspoof2019.LA.cm.train.trl.txt",
+        "dev_protocol": "trial_metadata.txt",
+        "eval_protocol": "trial_metadata.txt",
+    },
+    "inthewild": {
+        "train_subdir": "LA19",
+        "dev_subdir": "LA19",
+        "eval_subdir": "InTheWild",
+        "train_protocol": "ASVspoof2019.LA.cm.train.trl.txt",
+        "dev_protocol": "ASVspoof2019.LA.cm.dev.trl.txt",
+        "eval_protocol": "meta.csv",
+    },
+    "asvspoof5": {
+        "train_subdir": "ASVspoof5",
+        "dev_subdir": "ASVspoof5",
+        "eval_subdir": "ASVspoof5",
+        "train_protocol": "ASVspoof5.train.tsv",
+        "dev_protocol": "ASVspoof5.dev.track_1.tsv",
+        "eval_protocol": "ASVspoof5.eval.track_1.tsv",
+    },
+    "batch_size": 6,
+}
