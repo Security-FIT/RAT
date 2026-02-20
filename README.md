@@ -1,10 +1,11 @@
 # Reference-Augmented Training for ASV Anti-Spoofing
 
-**Authors:** Vojtěch Staněk ([istanek@fit.vut.cz](mailto:istanek@fit.vut.cz)), Anton Firc, Kamil Malinka, Jakub Reš
+**Authors:** [ANONYMIZED]
 
 **Abstract:** We introduce a spoofing countermeasure architecture conditioned on speaker-reference recordings, but observe that it converges to a solution that effectively ignores the reference during inference. Surprisingly, training with a reference channel induces invariance that improves deepfake detection, even when the reference is absent or mismatched during inference. Based on this observation, we propose a Reference-Augmented Training (RAT) strategy. RAT yields improved detection performance compared to single-utterance baselines, even when the reference recording is replaced with a zero vector at inference. Through rigorous analysis, we demonstrate that the optimization process rapidly diminishes the reference contributions, leading to a graceful disconnection of the reference channel. Using RAT, we achieve state-of-the-art 2.57\% EER and 0.074 minDCF on the ASVspoof 5 benchmark, surpassing even large ensembles with just a single detector.
 
-This repository contains the code for our paper Reference-Augmented Training for ASV Anti-Spoofing (link available after publishing).
+### Reproducibility 
+This repository contains the code for our paper Reference-Augmented Training for ASV Anti-Spoofing (link available after publishing). The model used in the paper is available at [Google Drive for download](https://drive.google.com/file/d/1C85iclcmch9Mvxcg_myGiy5EAgo73Dyl/view?usp=sharing). Scores are available in the `scores` folder.
 
 ## Repository structure
 
@@ -17,6 +18,7 @@ RAT
 ├── datasets            <- contains Dataset classes (ASVspoof (2019, 2021), ASVspoof5, In-the-Wild, Morphing)
 ├── extractors          <- contains various feature extractors
 ├── feature_processors  <- contains pooling implementation (MeanProcessor)
+├── scores              <- contains scored ASVspoof 5 evaluation in csv format [file_name, score, label]
 ├── trainers            <- contains classes for training and evaluating models
 ├ README.md
 ├ common.py             <- common code, enums, maps, dataloaders
@@ -102,4 +104,4 @@ Ensure that you have `torchrun` installed (it comes with `torch`) and that the a
 
 ## Contact
 
-For any inquiries, questions or ask for help/explanation, contact me at istanek@fit.vut.cz.
+For any inquiries, questions or ask for help/explanation, contact me at [ANONYMIZED].
